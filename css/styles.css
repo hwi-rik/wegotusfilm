@@ -298,11 +298,11 @@ body {
         margin-right: 30px;
     }
 
-    .fixed-symbol img {
+    .logo img {
         background-image: url('../images/LOGO_WEGOTUSFILM_iconver_color.png');
     }
 
-    .fixed-symbol img {
+    .fixed-symbol {
         width: 50px;
         height: 25px;
     }
