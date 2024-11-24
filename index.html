@@ -73,17 +73,22 @@
                 videoId: 'GHsIxg-DLkE',
                 playerVars: {
                     'autoplay': 1,
+                    'rel': 0,
                     'modestbranding': 1,
                     'controls': 0,
                     'loop': 1,
-                    'mute': 0,
-                    'rel': 0,
-
+                    'mute': 1,  // 자동재생을 위해 mute를 1로 설정
+                    'playsinline': 1  // 모바일에서 자동재생 지원
                 },
                 events: {
+                    'onReady': onPlayerReady,  // 플레이어 준비되면 실행할 함수 추가
                     'onStateChange': onPlayerStateChange
                 }
             });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();  // 플레이어가 준비되면 재생 시작
         }
 
         function onPlayerStateChange(event) {
