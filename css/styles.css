@@ -287,7 +287,7 @@ body {
     } 
 
     .video-container {
-        padding-top: 150px;
+        padding-top: 200px;
 
     }
     
@@ -297,8 +297,8 @@ body {
     }
 
     .fixed-symbol img {
-        width: 100px;
-        height: 50px;
+        width: 50px;
+        height: 25px;
     }
 
     
