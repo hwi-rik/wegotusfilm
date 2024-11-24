@@ -283,7 +283,7 @@ body {
     }
     
     .logo {
-        height: 80px;
+        height: 40px;
     }
 
     .navbar {
@@ -291,7 +291,7 @@ body {
     } 
 
     .video-container {
-        padding-bottom: 100%;    /* 16:9 비율 (9/16 = 0.5625) */
+        padding-top: 100px;
 
     }
 
