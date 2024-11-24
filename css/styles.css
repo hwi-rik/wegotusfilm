@@ -291,7 +291,8 @@ body {
     } 
 
     .video-container {
-        padding-top: 250px;
+        padding-bottom: 100%;    /* 16:9 비율 (9/16 = 0.5625) */
+
     }
 
 }
