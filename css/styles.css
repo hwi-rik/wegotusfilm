@@ -257,31 +257,8 @@ body {
 
 }
 
-/* 모바일 크기 (800px 이하) */
+/* 모바일 크기 (500px 이하) */
 @media screen and (max-width: 500px) {
-    .menu-toggle {
-        display: block;
-    }
-    
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        background-color: #fff;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        width: 100%;
-        text-align: center;
-    }
-    
-    .nav-links.active {
-        display: flex;
-        align-items: center;
-    }
-    
     .logo {
         height: 40px;
     }
@@ -291,7 +268,7 @@ body {
     } 
 
     .video-container {
-        padding-top: 100px;
+        padding-top: 2000px;
 
     }
 
