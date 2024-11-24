@@ -34,13 +34,7 @@
 
     <!-- 메인 비디오 -->
     <div class="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/GHsIxg-DLkE?si=W-6W1jlsUo8PPTIQ&autoplay=1&mute=1&controls=0&loop=1" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
+        <div id="player"></div>
     </div>
 
     <!-- 고정 심볼 -->
@@ -64,5 +58,37 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // YouTube API 로드
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '315',
+                width: '560',
+                videoId: 'GHsIxg-DLkE',
+                playerVars: {
+                    'autoplay': 1,
+                    'rel': 0,
+                    'modestbranding': 1,
+                    'mute': 1,
+                    'controls': 0
+                },
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.ENDED) {
+                player.playVideo(); // 영상이 끝나면 다시 재생
+            }
+        }
+    </script>
 </body>
 </html>
