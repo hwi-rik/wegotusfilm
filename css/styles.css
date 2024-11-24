@@ -281,10 +281,6 @@ body {
         display: flex;
         align-items: center;
     }
-    
-    .logo {
-        height: 40px;
-    }
 
     .navbar {
         height: 80px;
@@ -296,9 +292,12 @@ body {
     }
     
     .logo {
-        height: 120px;
+        height: 40px;
         margin-right: 30px;
-        image: url('../images/LOGO_WEGOTUSFILM_iconver_color.png');
+    }
+
+    .logo img {
+        background-image: url('../images/LOGO_WEGOTUSFILM_iconver_color.png');
     }
 
 }
