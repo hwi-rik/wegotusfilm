@@ -1,3 +1,5 @@
+
+
 :root {
     --primary-color: #ffffff;
     --background-color: #0a0a14;
@@ -294,6 +296,10 @@ body {
     .logo {
         height: 40px;
         margin-right: 30px;
+    }
+
+    .fixed-symbol img {
+        background-image: url('../images/LOGO_WEGOTUSFILM_iconver_color.png');
     }
 
     .fixed-symbol img {
