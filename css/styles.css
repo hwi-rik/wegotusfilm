@@ -33,21 +33,28 @@ body {
 .company-intro {
     position: fixed;
     width: 100%;
-    top:140px;
-    padding: 15px 20px;
-    height: 37px;
+    top: 140px;
+    margin: 0;    
+    height: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background: rgba(18, 14, 14, 0.8);
+    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(10px);
     z-index: 999;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0;
     box-sizing: border-box;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
+}
+
+.company-intro p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
 
 .navbar a {
     display: flex;
@@ -253,6 +260,11 @@ body {
         padding-top: 250px;
     }
 
+    .company-intro p {
+        font-size: 0.8em;
+        padding: 0 10px;
+    }
+
 }
 
 /* 모바일 크기 (500px 이하) */
@@ -297,6 +309,11 @@ body {
     .logo img {
         content: url('../images/LOGO_WEGOTUSFILM_iconver_color.png');
         height: 40px;
+    }
+
+    .company-intro p {
+        font-size: 0.7em;
+        padding: 0 5px;
     }
 
 }
