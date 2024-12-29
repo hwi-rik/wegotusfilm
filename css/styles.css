@@ -285,4 +285,30 @@ body {
 .menu-bar {
     background-image: url('../images/menu-bg.jpg');
 }
+
+.company-intro {
+    margin-top: 177px; /* navbar 높이만큼 여백 */
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* 모바일 대응 */
+@media screen and (max-width: 800px) {
+    .company-intro {
+        margin-top: 125px;
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .company-intro {
+        margin-top: 80px;
+        padding: 20px 10px;
+        font-size: 0.9em;
+    }
+}
   
