@@ -41,7 +41,7 @@ body {
     align-items: center;
     background: rgba(18, 14, 14, 0.8);
     backdrop-filter: blur(10px);
-    z-index: 1000;
+    z-index: 999;
     padding: 1.5rem 2rem;
     box-sizing: border-box;
     background-size: cover;
